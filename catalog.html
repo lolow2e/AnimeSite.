@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог аниме | AnimeSite</title>
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="AnimeSite Logo">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="forum.html">Форум</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Catalog Title -->
+    <section class="catalog-header">
+        <div class="container">
+            <h1>Каталог аниме</h1>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="container">
+            <label for="genre-select">Жанр:</label>
+            <select id="genre-select">
+                <option value="all">Все</option>
+                <option value="action">Экшен</option>
+                <option value="romance">Романтика</option>
+                <option value="fantasy">Фэнтези</option>
+                <option value="comedy">Комедия</option>
+            </select>
+
+            <label for="status-select">Статус:</label>
+            <select id="status-select">
+                <option value="all">Все</option>
+                <option value="ongoing">Онгоинг</option>
+                <option value="completed">Завершён</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Catalog Grid -->
+    <section class="anime-catalog">
+        <div class="container">
+            <div class="anime-grid">
+                <div class="anime-card">
+                    <img src="assets/anime1.jpg" alt="Re:Zero">
+                    <h3>Re:Zero. Жизнь с нуля в альтернативном мире</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/anime2.jpg" alt="Город, в котором меня нет">
+                    <h3>Город, в котором меня нет</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/anime3.jpg" alt="Летние времена">
+                    <h3>Летние времена</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/tokyo-ghoul.jpg" alt="Tokyo Ghoul">
+                    <h3>Токийский гуль</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/my-hero-academia.jpg" alt="My Hero Academia">
+                    <h3>Моя геройская академия</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/akame-ga-kill.jpg" alt="Akame ga Kill">
+                    <h3>Убийца акаме</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/attack-on-titan.jpg" alt="Attack on Titan">
+                    <h3>Атака титанов</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/one-punch-man.jpg" alt="One Punch Man">
+                    <h3>Ванпанчмен</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/promised-neverland.jpg" alt="Promised Neverland">
+                    <h3>Обещанный Неверленд</h3>
+                </div>
+
+                <!-- Новые аниме -->
+                <div class="anime-card">
+                    <img src="assets/naruto-shippuden.jpg" alt="Naruto Shippuden">
+                    <h3>Нарото: Ураганные хроники</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/fullmetal-alchemist.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                    <h3>Стальной алхимик: Братство</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/steins-gate.jpg" alt="Steins;Gate">
+                    <h3>Врата Штейна</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/demon-slayer.jpg" alt="Demon Slayer">
+                    <h3>Ковка демонов</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/haruhi-suzumiya.jpg" alt="The Melancholy of Haruhi Suzumiya">
+                    <h3>Меланхолия Харухи Судзумии</h3>
+                </div>
+                <div class="anime-card">
+                    <img src="assets/fate-stay-night.jpg" alt="Fate/Stay Night: Unlimited Blade Works">
+                    <h3>Судьба/Ночь схватки</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sort Options -->
+    <section class="sort-options">
+        <div class="container">
+            <label for="sort-select">Сортировать по:</label>
+            <select id="sort-select">
+                <option value="popular">Популярности</option>
+                <option value="alphabet">Алфавиту (А-Я)</option>
+                <option value="alphabet-desc">Алфавиту (Я-А)</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="pagination">
+        <div class="container">
+            <div class="pagination-buttons">
+                <a href="#" class="page-btn">1</a>
+                <a href="#" class="page-btn active">2</a>
+                <a href="#" class="page-btn">3</a>
+                <span class="dots">...</span>
+                <a href="#" class="page-btn">10</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">О сайте</a>
+                <a href="#">Контакты</a>
+                <a href="#">Правила</a>
+            </div>
+            <p>&copy; 2025 AnimeSite. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
